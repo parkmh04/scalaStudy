@@ -1,7 +1,7 @@
 object Hello extends App {
 
 
-  println("Hello, World!");
+  println("가즈아!! 요지경 스칼라");
 
 
 }
