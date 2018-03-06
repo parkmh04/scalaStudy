@@ -1,12 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="44179fbb-c3f6-4e5a-91be-275b13171c0d" name="Default" comment="">
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/ch3.sc" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change beforePath="$PROJECT_DIR$/src/Hello.scala" afterPath="$PROJECT_DIR$/src/Hello.scala" />
-      <change beforePath="$PROJECT_DIR$/src/ch2.sc" afterPath="$PROJECT_DIR$/src/ch2.sc" />
-    </list>
+    <list default="true" id="44179fbb-c3f6-4e5a-91be-275b13171c0d" name="Default" comment="" />
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -248,12 +243,12 @@
       <workItem from="1519790463613" duration="2333000" />
       <workItem from="1519819056833" duration="876000" />
       <workItem from="1520317712728" duration="262000" />
-      <workItem from="1520318831614" duration="5428000" />
+      <workItem from="1520318831614" duration="5775000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="10341000" />
+    <option name="totallyTimeSpent" value="10688000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="1680" y="23" width="2560" height="1417" extended-state="6" />
