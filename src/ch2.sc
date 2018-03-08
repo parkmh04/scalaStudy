@@ -7,7 +7,7 @@
 """
 
 val input = "Enjoying this apple 3.14159 times today"
-val pattern = """.* apple ([\d].+)times.*""".r  // 정규식이 책이 잘못된거 아닌가
+val pattern = """.* apple ([\d].+)times.*""".r // 정규식이 책이 잘못된거 아닌가
 val pattern(amountText) = input
 val amount = amountText.toDouble
 
@@ -25,12 +25,12 @@ val anotherTuple = 5 -> "xx"
 
 // 연습문제 1.
 val first = 22.5
-val second = (first * 9/5)
+val second = (first * 9 / 5)
 val third = second + 32
 
 // 연습문제 2.
 val start = 22.5
-val notEnd = (start * 9/5)
+val notEnd = (start * 9 / 5)
 val end = (notEnd + 32).toInt
 
 // 연습문제 3.
@@ -40,24 +40,41 @@ val guzi = "$"
 f"You owe  ${guzi}${value}."
 
 // 연습문제 4.
-val flag : Boolean = false;
-val result : Boolean = (flag == false)
+val flag: Boolean = false;
+val result: Boolean = (flag == false)
 
-val simple = (flag == false)
+val simple = !flag
 
 // 연습문제 5.
-val integer : Int = 128
-val char : Char = integer.toChar
-val string : String = char.toString
+val integer: Int = 128
+val char: Char = integer.toChar
+val string: String = char.toString
 // val double : Double = string.toDouble //<-- Exception 발생
 
 // 연습문제 6.
 val text = "Frank, 123 Main, 925-555-1943,95122"
 val regex = """\d{3}-\d{3}-\d{4}""".r
-val phoneNumber : String = (regex findFirstIn(text)).get
+val phoneNumber: String = (regex findFirstIn (text)).get
 val digits = phoneNumber.toCharArray
-                        .filter(ch => ch != '-')
-                        .map(ch=>ch.asDigit)
+  .filter(ch => ch != '-')
+  .map(ch => ch.asDigit)
 val pick = digits(2) // 요런건 그냥 [] 로 해주지..
 
+//// Nothing..
+//val not1: Int = ???
+//val not2: AnyRef = ???
+//val not3: Any = null
+//val not4: AnyVal = ???
+
+def m() : Seq[AnyVal] = if (true) Seq(1) else throw new IllegalArgumentException
+m()
+
+// val과 var의 차이 : val은 상수, var는 변수
+var xx = 123;
+xx = 1231454;
+
+class A {
+  val a: Int = 1
+  def copy : A = this
+}
 
