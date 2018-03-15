@@ -152,3 +152,10 @@ val numbers22 = for (i <- 1 to 100)
 val numbers3 = for (i <- 1 to 100) if (i % 3 == 0 && i % 5 == 0) println("typesafe") else if (i % 3 == 0) println("type") else if (i % 5 == 0) println("safe")
 val isSame = numbers2 == numbers3
 
+//val numbers4 = (1 to 100).foreach(i => println(if (i % 15 == 0) "typesafe" else if (i % 3 == 0) "type" else if (i % 5 == 0) "safe"))
+
+def conv(s:Int) = s match {
+  case 0 => "a"
+  case 2 => "b"
+}
+conv(3)
