@@ -112,23 +112,43 @@ val converted = inputs.map(s => s match {
 })
 println(converted)
 
+val converted2 = for (input <- inputs) yield
+  input match {
+    case "cyan" => "#00FFFF"
+    case "magenta" => "#FF00FF"
+    case "yellow" => "#FFFF00"
+    case _ => "#FFFFFF"
+  }
+println(converted2)
+
 // 연습문제 4.
 val numbers = for (i <- 1 to 100) {
   print(s"${i}, ")
   if (i % 5 == 0) println()
 }
 
+val numbers_1 = (1 to 100).foreach(i => {
+  print(s"${i}, ")
+  if (i % 5 == 0) println()
+})
+
 // 연습문제 5.
-val numbers2 = for (i <- 1 to 100) {
+val numbers2 = (for (i <- 1 to 100) yield
   i match {
-    case i if i % 3 == 0 && i % 5 == 0 => println("typesafe")
+    case i if i % 3 == 0 && i % 5 == 0 => "typesafe"
+    case i if i % 3 == 0 => "type"
+    case i if i % 5 == 0 => "safe"
+    case _ => ""
+  }).foreach(i =>println(i))
+val numbers22 = for (i <- 1 to 100)
+  i match {
+    case i if i % 15 == 0 => println("typesafe")
     case i if i % 3 == 0 => println("type")
     case i if i % 5 == 0 => println("safe")
-    case _ => ""
-  }
+    case _ =>
 }
 
 // 연습문제 6.
 val numbers3 = for (i <- 1 to 100) if (i % 3 == 0 && i % 5 == 0) println("typesafe") else if (i % 3 == 0) println("type") else if (i % 5 == 0) println("safe")
-
 val isSame = numbers2 == numbers3
+
