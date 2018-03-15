@@ -104,7 +104,7 @@ println(amount)
 
 // 연습문제 3.
 val inputs = List("cyan", "magenta", "yellow")
-val converted =  inputs.map(s => s match {
+val converted = inputs.map(s => s match {
   case "cyan" => "#00FFFF"
   case "magenta" => "#FF00FF"
   case "yellow" => "#FFFF00"
@@ -113,7 +113,22 @@ val converted =  inputs.map(s => s match {
 println(converted)
 
 // 연습문제 4.
-val numbers = for (i <- 1 to 100){
+val numbers = for (i <- 1 to 100) {
   print(s"${i}, ")
-  if (i % 5 == 0) println(s"${i}, ") else
+  if (i % 5 == 0) println()
 }
+
+// 연습문제 5.
+val numbers2 = for (i <- 1 to 100) {
+  i match {
+    case i if i % 3 == 0 && i % 5 == 0 => println("typesafe")
+    case i if i % 3 == 0 => println("type")
+    case i if i % 5 == 0 => println("safe")
+    case _ => ""
+  }
+}
+
+// 연습문제 6.
+val numbers3 = for (i <- 1 to 100) if (i % 3 == 0 && i % 5 == 0) println("typesafe") else if (i % 3 == 0) println("type") else if (i % 5 == 0) println("safe")
+
+val isSame = numbers2 == numbers3
