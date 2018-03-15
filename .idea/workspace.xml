@@ -2,10 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="44179fbb-c3f6-4e5a-91be-275b13171c0d" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change beforePath="$PROJECT_DIR$/out/production/HelloWorld/Hello$.class" afterPath="$PROJECT_DIR$/out/production/HelloWorld/Hello$.class" />
-      <change beforePath="$PROJECT_DIR$/out/production/HelloWorld/ch1.sc" afterPath="$PROJECT_DIR$/out/production/HelloWorld/ch1.sc" />
-      <change beforePath="$PROJECT_DIR$/src/Hello.scala" afterPath="$PROJECT_DIR$/src/Hello.scala" />
       <change beforePath="$PROJECT_DIR$/src/ch3.sc" afterPath="$PROJECT_DIR$/src/ch3.sc" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
@@ -21,8 +17,8 @@
       <file leaf-file-name="ch3.sc" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/ch3.sc">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="768">
-              <caret line="111" column="30" lean-forward="true" selection-start-line="111" selection-start-column="30" selection-end-line="111" selection-end-column="30" />
+            <state relative-caret-position="890">
+              <caret line="117" column="18" lean-forward="false" selection-start-line="117" selection-start-column="18" selection-end-line="117" selection-end-column="18" />
               <folding />
             </state>
           </provider>
@@ -302,16 +298,15 @@
       <workItem from="1520318831614" duration="5775000" />
       <workItem from="1520481990664" duration="3494000" />
       <workItem from="1520502692141" duration="428000" />
-      <workItem from="1520932985934" duration="8380000" />
+      <workItem from="1520932985934" duration="10393000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="22990000" />
+    <option name="totallyTimeSpent" value="25003000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="1669" y="23" width="2560" height="1417" extended-state="0" />
-    <editor active="true" />
     <layout>
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="FindBugs-IDEA" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
@@ -497,8 +492,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/ch3.sc">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="768">
-          <caret line="111" column="30" lean-forward="true" selection-start-line="111" selection-start-column="30" selection-end-line="111" selection-end-column="30" />
+        <state relative-caret-position="890">
+          <caret line="117" column="18" lean-forward="false" selection-start-line="117" selection-start-column="18" selection-end-line="117" selection-end-column="18" />
           <folding />
         </state>
       </provider>

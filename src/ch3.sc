@@ -100,26 +100,20 @@ amount match {
   case d if d == 0 => "same"
   case d if d < 0 => "less"
 }
+println(amount)
 
 // 연습문제 3.
-val inputs = ("cyan", "magenta", "yellow")
-val converted = for (input <- inputs) yield getRgb(input)
+val inputs = List("cyan", "magenta", "yellow")
+val converted =  inputs.map(s => s match {
+  case "cyan" => "#00FFFF"
+  case "magenta" => "#FF00FF"
+  case "yellow" => "#FFFF00"
+  case _ => "#FFFFFF"
+})
+println(converted)
 
-def getRgb(input: String) = {
-  input match {
-    case "cyan" => "#00FFFF"
-    case "magenta" => "##FF00FF"
-    case "yellow" => "#FFFF00"
-    case other => throw Exception
-
-  }
+// 연습문제 4.
+val numbers = for (i <- 1 to 100){
+  print(s"${i}, ")
+  if (i % 5 == 0) println(s"${i}, ") else
 }
-
-
-
-
-
-
-
-
-
