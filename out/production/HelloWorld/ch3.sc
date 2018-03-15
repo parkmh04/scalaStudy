@@ -1,4 +1,3 @@
-import com.sun.tools.doclets.internal.toolkit.util.DocFinder.Input
 
 // 조건식 : 삼항식이 없단다...
 val x = 5;
@@ -84,40 +83,7 @@ val something = for {inx <- 2 to 4
                      jnx <- 1 to 9;
                      multi = inx * jnx} {
   println(s"${inx} * ${jnx} = ${multi}")
-};
-
-// 연습문제 1.
-val name = ""
-name match {
-  case s if s != null && s.size > 0 => s
-  case other => "n/a"
 }
-
-// 연습문제 2.
-val amount: Double = -1
-amount match {
-  case d if d > 0 => "greater"
-  case d if d == 0 => "same"
-  case d if d < 0 => "less"
-}
-
-// 연습문제 3.
-val inputs = ("cyan", "magenta", "yellow")
-val converted = for (input <- inputs) yield getRgb(input)
-
-def getRgb(input: String) = {
-  input match {
-    case "cyan" => "#00FFFF"
-    case "magenta" => "##FF00FF"
-    case "yellow" => "#FFFF00"
-    case other => throw Exception
-
-  }
-}
-
-
-
-
 
 
 
