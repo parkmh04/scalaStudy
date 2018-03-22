@@ -2,12 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="44179fbb-c3f6-4e5a-91be-275b13171c0d" name="Default" comment="">
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/ch4.sc" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change beforePath="$PROJECT_DIR$/out/production/HelloWorld/Hello$.class" afterPath="$PROJECT_DIR$/out/production/HelloWorld/Hello$.class" />
-      <change beforePath="$PROJECT_DIR$/out/production/HelloWorld/Hello.class" afterPath="$PROJECT_DIR$/out/production/HelloWorld/Hello.class" />
-      <change beforePath="$PROJECT_DIR$/src/Hello.scala" afterPath="$PROJECT_DIR$/src/Hello.scala" />
-      <change beforePath="$PROJECT_DIR$/src/ch3.sc" afterPath="$PROJECT_DIR$/src/ch3.sc" />
+      <change beforePath="$PROJECT_DIR$/src/ch4.sc" afterPath="$PROJECT_DIR$/src/ch4.sc" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -22,8 +17,8 @@
       <file leaf-file-name="ch4.sc" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/ch4.sc">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="788">
-              <caret line="137" column="0" lean-forward="true" selection-start-line="137" selection-start-column="0" selection-end-line="137" selection-end-column="0" />
+            <state relative-caret-position="758">
+              <caret line="160" column="72" lean-forward="false" selection-start-line="160" selection-start-column="72" selection-end-line="160" selection-end-column="72" />
               <folding />
             </state>
           </provider>
@@ -327,12 +322,12 @@
       <workItem from="1520481990664" duration="3494000" />
       <workItem from="1520502692141" duration="428000" />
       <workItem from="1521620496604" duration="6692000" />
-      <workItem from="1521691164200" duration="626000" />
+      <workItem from="1521691164200" duration="2060000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="21928000" />
+    <option name="totallyTimeSpent" value="23362000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="1680" height="1027" extended-state="6" />
@@ -558,10 +553,18 @@
         </state>
       </provider>
     </entry>
+    <entry file="jar://$USER_HOME$/.ivy2/cache/org.scala-lang/scala-library/srcs/scala-library-2.12.4-sources.jar!/scala/Tuple2.scala">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="180">
+          <caret line="18" column="17" lean-forward="false" selection-start-line="18" selection-start-column="17" selection-end-line="18" selection-end-column="17" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/ch4.sc">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="788">
-          <caret line="137" column="0" lean-forward="true" selection-start-line="137" selection-start-column="0" selection-end-line="137" selection-end-column="0" />
+        <state relative-caret-position="758">
+          <caret line="160" column="72" lean-forward="false" selection-start-line="160" selection-start-column="72" selection-end-line="160" selection-end-column="72" />
           <folding />
         </state>
       </provider>

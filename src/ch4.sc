@@ -135,3 +135,29 @@ def getHuge2(x: Int, y: Int): Int = {
 getHuge2(2, 5)
 
 // 연습문제 6.
+val tupleX = (5, 10)
+val tupleY = (1, 4)
+
+def getDistance(x: Tuple2[Int, Int], y: Tuple2[Int, Int]): Double = {
+  val a = x._1 - y._1
+  val b = x._2 - y._2
+  return Math.sqrt(a * a + b * b)
+}
+getDistance(tupleX, tupleY)
+
+// 연습문제 7.
+val tupleZ = ("1", 4)
+def orderTuple(x: Tuple2[Any, Any]): Tuple2[Any, Any] = {
+  if (x._1.isInstanceOf[Int]) (x._1, x._2)
+  else if (x._2.isInstanceOf[Int]) (x._2, x._1)
+  else x
+}
+orderTuple(tupleZ)
+
+
+// 연습문제 8.
+val tupleM = ("1", 4, 5f)
+def makeTuple(x: Tuple3[Any, Any, Any]): Tuple6[Any, String, Any, String, Any, String] = {
+  (x._1, "\"" + x._1 + "\"", x._2, "\"" + x._2 + "\"", x._3, "\"" + x._3 + "\"")
+}
+makeTuple(tupleM)
