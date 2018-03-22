@@ -1,4 +1,6 @@
 import java.sql.Timestamp
+import java.util
+import java.util.Collections
 import java.util.concurrent.TimeUnit
 
 def hi() = "hi"
@@ -16,7 +18,7 @@ def multiplier2(x: Int, y: Int): Int = {
 }
 multiplier2(4, 8)
 
-// 재귀도 가능하다.
+// 재귀도 가능하다. 재귀를 짜려면 이왕이면, 테일로 짜라
 def zerox(x: Int): Int = {
   println(x)
   val y = x * x
@@ -106,7 +108,7 @@ def getDiameter(radius: String) = 2 * 3.14 * radius.toDouble
 getDiameter("3")
 // getDiameter("") // 에러발생
 
-// 연습문제 3.
+// 연습문제 3. 중첩함수를 쓰는 패턴을 이용하자
 @annotation.tailrec
 def sumFive(num: Int): Unit = {
   println(num)
@@ -116,9 +118,7 @@ def sumFive(num: Int): Unit = {
 sumFive(5)
 
 // 연습문제 4.
-def getDate(millisecond: Long) = {
-  new Timestamp(TimeUnit.MILLISECONDS.convert(millisecond, TimeUnit.MILLISECONDS)).toString() // 자바스러움
-}
+def getDate(millisecond: Long) = new Timestamp(TimeUnit.MILLISECONDS.convert(millisecond, TimeUnit.MILLISECONDS)).toString() // 자바스러움
 getDate(1182139200000L)
 
 // 연습문제 5.
@@ -126,11 +126,16 @@ def getHuge(x: Int, y: Int): Int = math.pow(x, y).toInt
 getHuge(2, 5)
 
 def getHuge2(x: Int, y: Int): Int = {
-  y match {
-    case 0 => 1
-    case 1 => x
-    case _ => x * getHuge2(x, y - 1)
+
+  @annotation.tailrec
+  def loop(y: Int, acc: Int): Int = {
+    y match {
+      case 0 => 1
+      case 1 => acc
+      case _ => loop(y - 1, acc * x)
+    }
   }
+  loop(y, 1)
 }
 getHuge2(2, 5)
 
@@ -147,9 +152,8 @@ getDistance(tupleX, tupleY)
 
 // 연습문제 7.
 val tupleZ = ("1", 4)
-def orderTuple(x: Tuple2[Any, Any]): Tuple2[Any, Any] = {
-  if (x._1.isInstanceOf[Int]) (x._1, x._2)
-  else if (x._2.isInstanceOf[Int]) (x._2, x._1)
+def orderTuple(x:(Any, Any)): (Any, Any) = {
+  if (x._2.isInstanceOf[Int]) (x._2, x._1)
   else x
 }
 orderTuple(tupleZ)
@@ -157,7 +161,9 @@ orderTuple(tupleZ)
 
 // 연습문제 8.
 val tupleM = ("1", 4, 5f)
-def makeTuple(x: Tuple3[Any, Any, Any]): Tuple6[Any, String, Any, String, Any, String] = {
-  (x._1, "\"" + x._1 + "\"", x._2, "\"" + x._2 + "\"", x._3, "\"" + x._3 + "\"")
+def makeTuple(tuple: (Any, Any, Any)) = {
+  tuple.productIterator
+       .map(v => (v, v.toString))
+         .collect(Collections.list())
 }
 makeTuple(tupleM)
