@@ -1,7 +1,12 @@
 object Hello extends App {
 
+  //@annotation.tailrec
+  def meron(x: Int): Int = {
+    Thread.sleep(1)
+    println(x)
+    if (x < 1) 1
+    else 1*  meron(x + 1)
+  }
 
-  println("가즈아!! 요지경 스칼라");
-
-
+  meron(3)
 }
